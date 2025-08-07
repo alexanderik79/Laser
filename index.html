@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Мета-теги для SEO -->
+  <title data-i18n="meta.title">Laser Hair Removal - [City]</title>
+  <meta name="description" data-i18n="meta.description" content="Professional laser hair removal in [City]. Safe, fast, effective. Book now!">
+  <meta name="keywords" content="laser hair removal, [city], beauty salon">
+  <!-- HREFLANG для мультиязычности -->
+  <link rel="alternate" href="https://your-site.com/en/" hreflang="en">
+  <link rel="alternate" href="https://your-site.com/nl/" hreflang="nl">
+  <link rel="alternate" href="https://your-site.com/uk/" hreflang="uk">
+  <link rel="alternate" href="https://your-site.com/pl/" hreflang="pl">
+  <link rel="alternate" href="https://your-site.com/ru/" hreflang="ru">
+  <link rel="alternate" href="https://your-site.com/" hreflang="x-default">
+  <!-- Schema.org для локального SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://your-site.com/#salon",
+      "name": "Laser Beauty",
+      "description": "Professional laser hair removal services in [City].",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[Street Address]",
+        "addressLocality": "[City]",
+        "postalCode": "[Postal Code]",
+        "addressCountry": "[Country]"
+      },
+      "telephone": "+[Phone Number]",
+      "url": "https://your-site.com/",
+      "image": "https://your-site.com/images/salon.jpg",
+      "openingHours": "Mo-Sa 09:00-18:00",
+      "priceRange": "$$"
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- AOS для анимаций -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Иконки FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Фавикон -->
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="/" class="logo" data-i18n="header.logo">Laser Beauty</a>
+        <nav class="nav">
+          <a href="#about" class="nav__link" data-i18n="header.nav.about">About</a>
+          <a href="#whyus" class="nav__link" data-i18n="header.nav.whyus">Why Us</a>
+          <a href="#team" class="nav__link" data-i18n="header.nav.team">Team</a>
+          <a href="#pricing" class="nav__link" data-i18n="header.nav.pricing">Pricing</a>
+          <a href="#booking" class="nav__link" data-i18n="header.nav.booking">Book</a>
+        </nav>
+        <div class="header__actions">
+          <select id="language-switcher" class="language-switcher">
+            <option value="en">EN</option>
+            <option value="nl">NL</option>
+            <option value="uk">UK</option>
+            <option value="pl">PL</option>
+            <option value="ru">RU</option>
+          </select>
+          <a href="#booking" class="btn btn--primary" data-i18n="header.cta">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Герой -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1 class="hero__title" data-i18n="hero.title" data-aos="fade-up">Smooth Skin with Laser Hair Removal</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle" data-aos="fade-up" data-aos-delay="200">Safe, Fast, Effective</p>
+      <div class="hero__actions" data-aos="fade-up" data-aos-delay="400">
+        <a href="#booking" class="btn btn--primary" data-i18n="hero.cta">Book Now</a>
+        <a href="https://wa.me/+[Phone Number]" class="btn btn--whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> <span data-i18n="hero.whatsapp">WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- О процедуре -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section__title" data-i18n="about.title" data-aos="fade-up">What is Laser Hair Removal?</h2>
+      <p class="about__text" data-i18n="about.text" data-aos="fade-up" data-aos-delay="200">Laser hair removal is a safe and effective way to remove unwanted hair using advanced laser technology.</p>
+      <div class="about__features grid" data-aos="fade-right" data-aos-delay="400">
+        <div class="feature">
+          <i class="fas fa-shield-alt"></i>
+          <h3 data-i18n="about.features.safety">Safety</h3>
+          <p data-i18n="about.features.safety_text">Certified equipment and trained professionals.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-clock"></i>
+          <h3 data-i18n="about.features.speed">Speed</h3>
+          <p data-i18n="about.features.speed_text">Fast sessions for busy schedules.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-heart"></i>
+          <h3 data-i18n="about.features.comfort">Comfort</h3>
+          <p data-i18n="about.features.comfort_text">Painless procedure with cooling technology.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section id="whyus" class="whyus">
+    <div class="container">
+      <h2 class="section__title" data-i18n="whyus.title" data-aos="fade-up">Why Choose Us?</h2>
+      <div class="whyus__items grid" data-aos="zoom-in" data-aos-delay="200">
+        <div class="whyus__item">
+          <h3 data-i18n="whyus.items.experts">Certified Experts</h3>
+          <p data-i18n="whyus.items.experts_text">Our team is trained and certified.</p>
+        </div>
+        <div class="whyus__item">
+          <h3 data-i18n="whyus.items.equipment">Modern Equipment</h3>
+          <p data-i18n="whyus.items.equipment_text">Latest laser technology for best results.</p>
+        </div>
+        <div class="whyus__item">
+          <h3 data-i18n="whyus.items.reviews">Trusted by Clients</h3>
+          <p data-i18n="whyus.items.reviews_text">Hundreds of happy customers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Портфолио мастеров -->
+  <section id="team" class="team">
+    <div class="container">
+      <h2 class="section__title" data-i18n="team.title" data-aos="fade-up">Our Experts</h2>
+      <div class="team__grid grid" data-aos="flip-left" data-aos-delay="200">
+        <div class="team__card">
+          <img src="images/team1.jpg" alt="Team member" loading="lazy">
+          <h3 data-i18n="team.members.anna">Anna</h3>
+          <p data-i18n="team.members.anna_text">5 years of experience</p>
+        </div>
+        <div class="team__card">
+          <img src="images/team2.jpg" alt="Team member" loading="lazy">
+          <h3 data-i18n="team.members.maria">Maria</h3>
+          <p data-i18n="team.members.maria_text">3 years of experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Галерея -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section__title" data-i18n="gallery.title" data-aos="fade-up">Our Work</h2>
+      <div class="gallery__grid grid" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/gallery1.jpg" alt="Gallery image" loading="lazy" class="gallery__image">
+        <img src="images/gallery2.jpg" alt="Gallery image" loading="lazy" class="gallery__image">
+        <img src="images/gallery3.jpg" alt="Gallery image" loading="lazy" class="gallery__image">
+        <img src="images/gallery4.jpg" alt="Gallery image" loading="lazy" class="gallery__image">
+      </div>
+      <div class="gallery__video" data-aos="fade-up" data-aos-delay="400">
+        <iframe src="https://www.youtube.com/embed/[Video ID]" title="Laser Hair Removal" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Цены -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 class="section__title" data-i18n="pricing.title" data-aos="fade-up">Our Prices</h2>
+      <div class="pricing__table grid" data-aos="fade-left" data-aos-delay="200">
+        <div class="pricing__row pricing__header">
+          <span data-i18n="pricing.zone">Zone</span>
+          <span data-i18n="pricing.price">Price per Session</span>
+        </div>
+        <div class="pricing__row">
+          <span data-i18n="pricing.zones.legs">Legs</span>
+          <span data-i18n="pricing.zones.legs_price">[Price]</span>
+        </div>
+        <div class="pricing__row">
+          <span data-i18n="pricing.zones.bikini">Bikini</span>
+          <span data-i18n="pricing.zones.bikini_price">[Price]</span>
+        </div>
+        <div class="pricing__row">
+          <span data-i18n="pricing.zones.underarms">Underarms</span>
+          <span data-i18n="pricing.zones.underarms_price">[Price]</span>
+        </div>
+      </div>
+      <p class="pricing__promo" data-i18n="pricing.promo" data-aos="fade-up" data-aos-delay="400">First Session -20% Off!</p>
+    </div>
+  </section>
+
+  <!-- Форма записи -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <h2 class="section__title" data-i18n="booking.title" data-aos="fade-up">Book Your Appointment</h2>
+      <form id="booking-form" class="booking__form grid" data-aos="zoom-in" data-aos-delay="200">
+        <input type="text" name="name" placeholder="Name" data-i18n="[placeholder]booking.form.name" required>
+        <input type="tel" name="phone" placeholder="Phone" data-i18n="[placeholder]booking.form.phone" required>
+        <select name="service" required>
+          <option value="" disabled selected data-i18n="booking.form.service">Select Service</option>
+          <option value="legs" data-i18n="booking.form.services.legs">Legs</option>
+          <option value="bikini" data-i18n="booking.form.services.bikini">Bikini</option>
+          <option value="underarms" data-i18n="booking.form.services.underarms">Underarms</option>
+        </select>
+        <textarea name="comment" placeholder="Comment" data-i18n="[placeholder]booking.form.comment"></textarea>
+        <button type="submit" class="btn btn--primary" data-i18n="booking.form.submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section__title" data-i18n="contact.title" data-aos="fade-up">Get in Touch</h2>
+      <div class="contact__grid grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact__info">
+          <p data-i18n="contact.address">[Street Address], [City], [Postal Code]</p>
+          <p><a href="tel:+[Phone Number]" data-i18n="contact.phone">+[Phone Number]</a></p>
+          <p><a href="mailto:info@your-site.com" data-i18n="contact.email">info@your-site.com</a></p>
+          <div class="contact__socials">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+          <a href="https://wa.me/+[Phone Number]" class="btn btn--whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> <span data-i18n="contact.whatsapp">WhatsApp</span>
+          </a>
+        </div>
+        <div class="contact__map">
+          <iframe src="https://www.google.com/maps/embed?pb=[Map Embed Code]" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section__title" data-i18n="faq.title" data-aos="fade-up">Frequently Asked Questions</h2>
+      <div class="faq__items" data-aos="fade-right" data-aos-delay="200">
+        <div class="faq__item">
+          <h3 data-i18n="faq.questions.pain">Is it painful?</h3>
+          <p data-i18n="faq.questions.pain_text">No, our cooling technology ensures a comfortable experience.</p>
+        </div>
+        <div class="faq__item">
+          <h3 data-i18n="faq.questions.sessions">How many sessions are needed?</h3>
+          <p data-i18n="faq.questions.sessions_text">Typically 6–8 sessions for optimal results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content grid">
+        <div class="footer__logo">
+          <a href="/" data-i18n="footer.logo">Laser Beauty</a>
+        </div>
+        <div class="footer__links">
+          <a href="/privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+        </div>
+        <div class="footer__socials">
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2025 Laser Beauty. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/i18next@23.15.1/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@8.0.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

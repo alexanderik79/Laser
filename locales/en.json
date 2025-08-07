@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Laser Hair Removal - [City]",
+    "description": "Professional laser hair removal in [City]. Safe, fast, effective. Book now!"
+  },
+  "header": {
+    "logo": "Laser Beauty",
+    "nav": {
+      "about": "About",
+      "whyus": "Why Us",
+      "team": "Team",
+      "pricing": "Pricing",
+      "booking": "Book"
+    },
+    "cta": "Book Now"
+  },
+  "hero": {
+    "title": "Smooth Skin with Laser Hair Removal",
+    "subtitle": "Safe, Fast, Effective",
+    "cta": "Book Now",
+    "whatsapp": "WhatsApp"
+  },
+  "about": {
+    "title": "What is Laser Hair Removal?",
+    "text": "Laser hair removal is a safe and effective way to remove unwanted hair using advanced laser technology.",
+    "features": {
+      "safety": "Safety",
+      "safety_text": "Certified equipment and trained professionals.",
+      "speed": "Speed",
+      "speed_text": "Fast sessions for busy schedules.",
+      "comfort": "Comfort",
+      "comfort_text": "Painless procedure with cooling technology."
+    }
+  },
+  "whyus": {
+    "title": "Why Choose Us?",
+    "items": {
+      "experts": "Certified Experts",
+      "experts_text": "Our team is trained and certified.",
+      "equipment": "Modern Equipment",
+      "equipment_text": "Latest laser technology for best results.",
+      "reviews": "Trusted by Clients",
+      "reviews_text": "Hundreds of happy customers."
+    }
+  },
+  "team": {
+    "title": "Our Experts",
+    "members": {
+      "anna": "Anna",
+      "anna_text": "5 years of experience",
+      "maria": "Maria",
+      "maria_text": "3 years of experience"
+    }
+  },
+  "gallery": {
+    "title": "Our Work"
+  },
+  "pricing": {
+    "title": "Our Prices",
+    "zone": "Zone",
+    "price": "Price per Session",
+    "zones": {
+      "legs": "Legs",
+      "legs_price": "$100",
+      "bikini": "Bikini",
+      "bikini_price": "$80",
+      "underarms": "Underarms",
+      "underarms_price": "$50"
+    },
+    "promo": "First Session -20% Off!"
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "service": "Select Service",
+      "services": {
+        "legs": "Legs",
+        "bikini": "Bikini",
+        "underarms": "Underarms"
+      },
+      "comment": "Comment",
+      "submit": "Submit",
+      "success": "Form submitted successfully!",
+      "error": "Error submitting form. Please try again."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "address": "[Street Address], [City], [Postal Code]",
+    "phone": "+[Phone Number]",
+    "email": "info@your-site.com",
+    "whatsapp": "WhatsApp"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "pain": "Is it painful?",
+      "pain_text": "No, our cooling technology ensures a comfortable experience.",
+      "sessions": "How many sessions are needed?",
+      "sessions_text": "Typically 6–8 sessions for optimal results."
+    }
+  },
+  "footer": {
+    "logo": "Laser Beauty",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2025 Laser Beauty. All rights reserved."
+  },
+
+
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy - Laser Beauty",
+      "description": "Learn how Laser Beauty protects your personal data and ensures privacy."
+    },
+    "title": "Privacy Policy",
+    "intro": "At Laser Beauty, we value your privacy and are committed to protecting your personal data.",
+    "collection": {
+      "title": "Data Collection",
+      "text": "We collect personal information such as your name, phone number, and email when you fill out our booking form or contact us."
+    },
+    "use": {
+      "title": "Data Use",
+      "text": "Your data is used to process bookings, respond to inquiries, and improve our services. We do not share your information with third parties without your consent."
+    },
+    "protection": {
+      "title": "Data Protection",
+      "text": "We implement security measures to protect your data from unauthorized access or disclosure."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "text": "You have the right to access, correct, or delete your personal data. Contact us at <a href='mailto:info@your-site.com'>info@your-site.com</a> to exercise these rights."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "text": "For questions about this Privacy Policy, please contact us at <a href='mailto:info@your-site.com'>info@your-site.com</a> or call +[Phone Number]."
+    }
+  }
+}
