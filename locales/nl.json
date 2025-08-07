@@ -1,28 +1,28 @@
 {
   "meta": {
-    "title": "Laser Ontharing - [City]",
-    "description": "Professionele laser ontharing in [City]. Veilig, snel, effectief. Boek nu!"
+    "title": "Laser Ontharing - [Stad]",
+    "description": "Professionele laserontharing in [Stad]. Veilig, snel, effectief. Boek nu!"
   },
   "header": {
     "logo": "Laser Beauty",
     "nav": {
-      "about": "Over Ons",
+      "about": "Over",
       "whyus": "Waarom Wij",
       "team": "Team",
       "pricing": "Prijzen",
       "booking": "Boek"
     },
-    "cta": "Nu Boeken"
+    "cta": "Boek Nu"
   },
   "hero": {
-    "title": "Gladde Huid met Laser Ontharing",
+    "title": "Een Gladde Huid met Laser Ontharing",
     "subtitle": "Veilig, Snel, Effectief",
-    "cta": "Nu Boeken",
+    "cta": "Boek Nu",
     "whatsapp": "WhatsApp"
   },
   "about": {
     "title": "Wat is Laser Ontharing?",
-    "text": "Laser ontharing is een veilige en effectieve manier om ongewenst haar te verwijderen met behulp van geavanceerde lasertechnologie.",
+    "text": "Laserontharing is een veilige en effectieve manier om ongewenst haar te verwijderen met behulp van geavanceerde lasertechnologie.",
     "features": {
       "safety": "Veiligheid",
       "safety_text": "Gecertificeerde apparatuur en getrainde professionals.",
@@ -33,12 +33,12 @@
     }
   },
   "whyus": {
-    "title": "Waarom Kiezen voor Ons?",
+    "title": "Waarom voor ons kiezen?",
     "items": {
       "experts": "Gecertificeerde Experts",
       "experts_text": "Ons team is opgeleid en gecertificeerd.",
       "equipment": "Moderne Apparatuur",
-      "equipment_text": "Nieuwste lasertechnologie voor de beste resultaten.",
+      "equipment_text": "De nieuwste lasertechnologie voor de beste resultaten.",
       "reviews": "Vertrouwd door Klanten",
       "reviews_text": "Honderden tevreden klanten."
     }
@@ -61,16 +61,16 @@
     "price": "Prijs per Sessie",
     "zones": {
       "legs": "Benen",
-      "legs_price": "€100",
+      "legs_price": "$100",
       "bikini": "Bikini",
-      "bikini_price": "€80",
+      "bikini_price": "$80",
       "underarms": "Oksels",
-      "underarms_price": "€50"
+      "underarms_price": "$50"
     },
     "promo": "Eerste Sessie -20% Korting!"
   },
   "booking": {
-    "title": "Boek Uw Afspraak",
+    "title": "Maak een Afspraak",
     "form": {
       "name": "Naam",
       "phone": "Telefoon",
@@ -83,13 +83,15 @@
       "comment": "Opmerking",
       "submit": "Verzenden",
       "success": "Formulier succesvol verzonden!",
-      "error": "Fout bij verzenden. Probeer opnieuw."
+      "error": "Fout bij het verzenden van het formulier. Probeer het opnieuw.",
+      "error_name": "Voer een geldige naam in (minimaal 2 letters).",
+      "error_phone": "Voer een geldig telefoonnummer in (9-15 cijfers)."
     }
   },
   "contact": {
     "title": "Neem Contact Op",
-    "address": "[Street Address], [City], [Postal Code]",
-    "phone": "+[Phone Number]",
+    "address": "[Straatadres], [Stad], [Postcode]",
+    "phone": "+[Telefoonnummer]",
     "email": "info@your-site.com",
     "whatsapp": "WhatsApp"
   },
@@ -99,7 +101,13 @@
       "pain": "Doet het pijn?",
       "pain_text": "Nee, onze koeltechnologie zorgt voor een comfortabele ervaring.",
       "sessions": "Hoeveel sessies zijn nodig?",
-      "sessions_text": "Meestal 6–8 sessies voor optimale resultaten."
+      "sessions_text": "Doorgaans 6–8 sessies voor optimale resultaten.",
+      "durability": "Hoe lang blijven de resultaten?",
+      "durability_text": "Na het voltooien van een volledige cursus zijn de resultaten langdurig. Periodieke onderhoudssessies kunnen nodig zijn.",
+      "preparation": "Hoe moet ik me voorbereiden op de procedure?",
+      "preparation_text": "Voorafgaand aan de sessie moet u het te behandelen gebied scheren en ten minste twee weken blootstelling aan de zon vermijden.",
+      "suitability": "Is laserontharing geschikt voor alle huidtypes?",
+      "suitability_text": "Moderne lasertechnologie is effectief voor verschillende huidtypes en haarkleuren, maar het is het beste om met onze specialist te overleggen om de beste aanpak voor u te bepalen."
     }
   },
   "footer": {
@@ -107,21 +115,19 @@
     "privacy": "Privacybeleid",
     "copyright": "© 2025 Laser Beauty. Alle rechten voorbehouden."
   },
-
-
   "privacy": {
     "meta": {
       "title": "Privacybeleid - Laser Beauty",
-      "description": "Ontdek hoe Laser Beauty uw persoonlijke gegevens beschermt en privacy waarborgt."
+      "description": "Lees hoe Laser Beauty uw persoonsgegevens beschermt en uw privacy waarborgt."
     },
     "title": "Privacybeleid",
-    "intro": "Bij Laser Beauty waarderen we uw privacy en zetten we ons in om uw persoonlijke gegevens te beschermen.",
+    "intro": "Bij Laser Beauty hechten we veel waarde aan uw privacy en zetten we ons in om uw persoonsgegevens te beschermen.",
     "collection": {
       "title": "Gegevensverzameling",
-      "text": "We verzamelen persoonlijke informatie zoals uw naam, telefoonnummer en e-mail wanneer u ons boekingsformulier invult of contact met ons opneemt."
+      "text": "We verzamelen persoonlijke informatie zoals uw naam, telefoonnummer en e-mailadres wanneer u ons boekingsformulier invult of contact met ons opneemt."
     },
     "use": {
-      "title": "Gebruik van Gegevens",
+      "title": "Gegevensgebruik",
       "text": "Uw gegevens worden gebruikt om boekingen te verwerken, vragen te beantwoorden en onze diensten te verbeteren. We delen uw informatie niet met derden zonder uw toestemming."
     },
     "protection": {
@@ -130,11 +136,11 @@
     },
     "rights": {
       "title": "Uw Rechten",
-      "text": "U heeft het recht om uw persoonlijke gegevens in te zien, te corrigeren of te verwijderen. Neem contact met ons op via <a href='mailto:info@your-site.com'>info@your-site.com</a> om deze rechten uit te oefenen."
+      "text": "U heeft het recht om uw persoonsgegevens in te zien, te corrigeren of te laten verwijderen. Neem contact met ons op via <a href='mailto:info@your-site.com'>info@your-site.com</a> om deze rechten uit te oefenen."
     },
     "contact": {
-      "title": "Contacteer Ons",
-      "text": "Voor vragen over dit Privacybeleid kunt u contact met ons opnemen via <a href='mailto:info@your-site.com'>info@your-site.com</a> of bel +[Phone Number]."
+      "title": "Contact opnemen",
+      "text": "Voor vragen over dit Privacybeleid kunt u contact met ons opnemen via <a href='mailto:info@your-site.com'>info@your-site.com</a> of bellen naar +[Telefoonnummer]."
     }
   }
 }

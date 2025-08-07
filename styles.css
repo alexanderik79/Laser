@@ -521,36 +521,51 @@ a {
   border: none;
 }
 
-/* FAQ */
-.faq {
-  padding: var(--spacing-xl) 0;
-  background-color: var(--background-dark);
-}
 
-.faq__items {
-  max-width: 800px;
-  margin: 0 auto;
-}
 
+/* --- */
+/* FAQ - исправленная версия для плавной анимации */
+/* --- */
 .faq__item {
-  margin-bottom: var(--spacing-md);
-  padding: var(--spacing-md);
+  cursor: pointer;
   background-color: var(--background-light);
   border-left: 4px solid var(--primary-color);
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-sm);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
 }
 
 .faq__item h3 {
   font-size: var(--font-size-base);
-  margin-bottom: var(--spacing-xs);
-  cursor: pointer;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.faq__item h3:hover {
+  color: var(--primary-color);
 }
 
 .faq__item p {
+  /* Важно: устанавливаем начальную высоту 0 и добавляем переход */
+  max-height: 0;
+  overflow: hidden; /* Скрываем текст, который выходит за границы */
+  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Плавный и красивый переход */
+  padding-top: 0;
   color: var(--text-color-secondary);
-  display: none; /* Скрыть по умолчанию */
 }
+
+.faq__item.active p {
+  /* max-height будет установлен через JavaScript,
+     поэтому здесь нужно только добавить отступ */
+  padding-top: var(--spacing-sm);
+}
+
+.faq__item.active {
+  box-shadow: var(--box-shadow-md);
+}
+
+
 
 /* Футер */
 .footer {

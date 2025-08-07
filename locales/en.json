@@ -83,7 +83,9 @@
       "comment": "Comment",
       "submit": "Submit",
       "success": "Form submitted successfully!",
-      "error": "Error submitting form. Please try again."
+      "error": "Error submitting form. Please try again.",
+      "error_name": "Please enter a valid name (at least 2 letters).",
+      "error_phone": "Please enter a valid phone number (9-15 digits)."
     }
   },
   "contact": {
@@ -99,7 +101,13 @@
       "pain": "Is it painful?",
       "pain_text": "No, our cooling technology ensures a comfortable experience.",
       "sessions": "How many sessions are needed?",
-      "sessions_text": "Typically 6–8 sessions for optimal results."
+      "sessions_text": "Typically 6–8 sessions for optimal results.",
+      "durability": "How long do the results last?",
+      "durability_text": "After completing a full course, the results are long-lasting. Periodic maintenance sessions may be needed.",
+      "preparation": "How should I prepare for the procedure?",
+      "preparation_text": "Before the session, you should shave the treatment area and avoid sun exposure for at least two weeks.",
+      "suitability": "Is laser hair removal suitable for all skin types?",
+      "suitability_text": "Modern laser technology is effective for various skin types and hair colors, but it is best to consult with our specialist to determine the best approach for you."
     }
   },
   "footer": {
@@ -107,8 +115,6 @@
     "privacy": "Privacy Policy",
     "copyright": "© 2025 Laser Beauty. All rights reserved."
   },
-
-
   "privacy": {
     "meta": {
       "title": "Privacy Policy - Laser Beauty",
