@@ -18,6 +18,11 @@ export function initI18n() {
       },
       (err, t) => {
         if (err) return console.error('i18next error:', err);
+        // Синхронизируем <select> с текущим языком
+        const languageSwitcher = document.getElementById('language-switcher');
+        if (languageSwitcher) {
+          languageSwitcher.value = i18nextInstance.language || 'en';
+        }
         updateContent(t);
       }
     );
@@ -36,6 +41,11 @@ export function initI18n() {
       i18nextInstance.addResourceBundle('uk', 'translation', uk);
       i18nextInstance.addResourceBundle('pl', 'translation', pl);
       i18nextInstance.addResourceBundle('ru', 'translation', ru);
+      // Повторно синхронизируем <select> после загрузки переводов
+      const languageSwitcher = document.getElementById('language-switcher');
+      if (languageSwitcher) {
+        languageSwitcher.value = i18nextInstance.language || 'en';
+      }
       updateContent(i18nextInstance.t);
     })
     .catch((err) => console.error('Error loading translations:', err));
