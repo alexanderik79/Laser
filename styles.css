@@ -50,6 +50,7 @@ html {
 }
 
 body {
+  overflow-x: hidden !important;
   font-family: var(--font-main);
   color: var(--text-color-primary);
   background-color: var(--background-light);
