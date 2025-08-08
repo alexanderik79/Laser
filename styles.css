@@ -614,6 +614,14 @@ a {
   color: var(--text-color-secondary);
 }
 
+.webmaster__link {
+  text-align: center;
+}
+
+.webmaster__link a {
+  font-size: x-small;
+}
+
 /* Модальное окно */
 .modal {
   position: fixed;
