@@ -8,12 +8,12 @@
     <meta name="keywords" content="laser hair removal, Helmond, beauty salon">
     
     <script type="application/ld+json">
+    [
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://laser-nadiia.netlify.app/#salon",
         "name": "Laser Nadiia",
-        "description": "Professional laser hair removal services in Helmond.",
+        "image": "https://laser-nadiia.netlify.app/images/salon.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Stationsplein, 2",
@@ -21,13 +21,87 @@
           "postalCode": "5701 PE",
           "addressCountry": "NL"
         },
-        "telephone": "+31622613808",
         "url": "https://laser-nadiia.netlify.app/",
-        "image": "https://laser-nadiia.netlify.app/images/salon.jpg",
+        "telephone": "+31622613808",
         "openingHours": "Mo-Sa 09:00-18:00",
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "reviewCount": "100"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Анна Смирнова"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "reviewBody": "Процедура была безболезненной, а результат превзошел все ожидания. Очень рекомендую!",
+            "datePublished": "2024-07-25"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is it painful?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, our cooling technology ensures a comfortable experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sessions are needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically 6–8 sessions for optimal results."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Laser Hair Removal",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Laser Nadiia",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Stationsplein, 2",
+            "addressLocality": "Helmond",
+            "postalCode": "5701 PE",
+            "addressCountry": "NL"
+          }
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Helmond"
+        },
+        "description": "Professional and safe laser hair removal services for various body parts, including legs, bikini area, and underarms. Our advanced technology ensures a comfortable and effective experience.",
+        "offers": {
+          "@type": "Offer",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "priceCurrency": "EUR",
+            "minPrice": "20",
+            "maxPrice": "100"
+          }
+        }
       }
+    ]
     </script>
+
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
