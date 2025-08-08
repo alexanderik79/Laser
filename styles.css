@@ -191,9 +191,22 @@ a {
 .language-switcher {
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-sm);
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
+  border: none;
+  outline: none;
+  box-shadow: none;
   background-color: var(--background-dark);
   font-size: var(--font-size-sm);
+}
+
+.language-switcher:focus {
+    border: none;
+    outline: none;
+}
+
+.language-switcher:active {
+    border: none;
+    outline: none;
 }
 
 /* Герой */
