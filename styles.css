@@ -595,6 +595,7 @@ a {
 .footer__socials {
   display: flex;
   gap: var(--spacing-sm);
+  margin: auto;
 }
 
 .footer__socials a {

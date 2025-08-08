@@ -4,7 +4,7 @@
     "description": "Professional laser hair removal in [City]. Safe, fast, effective. Book now!"
   },
   "header": {
-    "logo": "Laser Beauty",
+    "logo": "Laser Nadiia",
     "nav": {
       "about": "About",
       "whyus": "Why Us",
@@ -90,8 +90,8 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "address": "[Street Address], [City], [Postal Code]",
-    "phone": "+[Phone Number]",
+    "address": "Stationsplein, 2, Helmond, 5701 PE",
+    "phone": "+31622613808",
     "email": "info@your-site.com",
     "whatsapp": "WhatsApp"
   },
@@ -111,17 +111,17 @@
     }
   },
   "footer": {
-    "logo": "Laser Beauty",
+    "logo": "Laser Nadiia",
     "privacy": "Privacy Policy",
-    "copyright": "© 2025 Laser Beauty. All rights reserved."
+    "copyright": "© 2025 Laser Nadiia. All rights reserved."
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy - Laser Beauty",
-      "description": "Learn how Laser Beauty protects your personal data and ensures privacy."
+      "title": "Privacy Policy - Laser Nadiia",
+      "description": "Learn how Laser Nadiia protects your personal data and ensures privacy."
     },
     "title": "Privacy Policy",
-    "intro": "At Laser Beauty, we value your privacy and are committed to protecting your personal data.",
+    "intro": "At Laser Nadiia, we value your privacy and are committed to protecting your personal data.",
     "collection": {
       "title": "Data Collection",
       "text": "We collect personal information such as your name, phone number, and email when you fill out our booking form or contact us."

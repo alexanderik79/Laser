@@ -4,7 +4,7 @@
     "description": "Professionele laserontharing in [Stad]. Veilig, snel, effectief. Boek nu!"
   },
   "header": {
-    "logo": "Laser Beauty",
+    "logo": "Laser Nadiia",
     "nav": {
       "about": "Over",
       "whyus": "Waarom Wij",
@@ -90,8 +90,8 @@
   },
   "contact": {
     "title": "Neem Contact Op",
-    "address": "[Straatadres], [Stad], [Postcode]",
-    "phone": "+[Telefoonnummer]",
+    "address": "Stationsplein, 2, Helmond, 5701 PE",
+    "phone": "+31622613808",
     "email": "info@your-site.com",
     "whatsapp": "WhatsApp"
   },
@@ -111,17 +111,17 @@
     }
   },
   "footer": {
-    "logo": "Laser Beauty",
+    "logo": "Laser Nadiia",
     "privacy": "Privacybeleid",
-    "copyright": "© 2025 Laser Beauty. Alle rechten voorbehouden."
+    "copyright": "© 2025 Laser Nadiia. Alle rechten voorbehouden."
   },
   "privacy": {
     "meta": {
-      "title": "Privacybeleid - Laser Beauty",
-      "description": "Lees hoe Laser Beauty uw persoonsgegevens beschermt en uw privacy waarborgt."
+      "title": "Privacybeleid - Laser Nadiia",
+      "description": "Lees hoe Laser Nadiia uw persoonsgegevens beschermt en uw privacy waarborgt."
     },
     "title": "Privacybeleid",
-    "intro": "Bij Laser Beauty hechten we veel waarde aan uw privacy en zetten we ons in om uw persoonsgegevens te beschermen.",
+    "intro": "Bij Laser Nadiia hechten we veel waarde aan uw privacy en zetten we ons in om uw persoonsgegevens te beschermen.",
     "collection": {
       "title": "Gegevensverzameling",
       "text": "We verzamelen persoonlijke informatie zoals uw naam, telefoonnummer en e-mailadres wanneer u ons boekingsformulier invult of contact met ons opneemt."

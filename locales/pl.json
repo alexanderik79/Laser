@@ -4,7 +4,7 @@
     "description": "Profesjonalna depilacja laserowa w [Miasto]. Bezpiecznie, szybko, skutecznie. Zarezerwuj już teraz!"
   },
   "header": {
-    "logo": "Laser Beauty",
+    "logo": "Laser Nadiia",
     "nav": {
       "about": "O nas",
       "whyus": "Dlaczego my",
@@ -90,8 +90,8 @@
   },
   "contact": {
     "title": "Skontaktuj się z nami",
-    "address": "[Adres], [Miasto], [Kod pocztowy]",
-    "phone": "+[Numer telefonu]",
+    "address": "Stationsplein, 2, Helmond, 5701 PE",
+    "phone": "+31622613808",
     "email": "info@your-site.com",
     "whatsapp": "WhatsApp"
   },
@@ -111,17 +111,17 @@
     }
   },
   "footer": {
-    "logo": "Laser Beauty",
+    "logo": "Laser Nadiia",
     "privacy": "Polityka Prywatności",
-    "copyright": "© 2025 Laser Beauty. Wszelkie prawa zastrzeżone."
+    "copyright": "© 2025 Laser Nadiia. Wszelkie prawa zastrzeżone."
   },
   "privacy": {
     "meta": {
-      "title": "Polityka Prywatności - Laser Beauty",
-      "description": "Dowiedz się, jak Laser Beauty chroni Twoje dane osobowe i zapewnia prywatność."
+      "title": "Polityka Prywatności - Laser Nadiia",
+      "description": "Dowiedz się, jak Laser Nadiia chroni Twoje dane osobowe i zapewnia prywatność."
     },
     "title": "Polityka Prywatności",
-    "intro": "W Laser Beauty cenimy Twoją prywatność i zobowiązujemy się do ochrony Twoich danych osobowych.",
+    "intro": "W Laser Nadiia cenimy Twoją prywatność i zobowiązujemy się do ochrony Twoich danych osobowych.",
     "collection": {
       "title": "Gromadzenie Danych",
       "text": "Gromadzimy dane osobowe, takie jak imię, numer telefonu i adres e-mail, gdy wypełniasz nasz formularz rezerwacji lub kontaktujesz się z nami."
