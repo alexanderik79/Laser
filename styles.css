@@ -1,22 +1,22 @@
-/* Переменные для более чистого дизайна */
+/* Variables for a cleaner design */
 :root {
-  /* Цвета: более глубокие, элегантные и гармоничные */
-  --primary-color: #A36B84; /* Глубокий, тёплый акцент */
+  /* Colors: deeper, more elegant, and harmonious */
+  --primary-color: #A36B84; /* Deep, warm accent */
   --primary-hover: #8e5c70;
   --whatsapp-color: #25D366;
   --whatsapp-hover: #1fba57;
-  --background-light: #F0F2F5; /* Очень светлый фон, нейтральный */
-  --background-dark: #FFFFFF; /* Белый для контраста */
-  --text-color-primary: #2C3E50; /* Тёмно-серый, почти чёрный */
-  --text-color-secondary: #7F8C8D; /* Светло-серый */
-  --border-color: #E0E0E0; /* Мягкие, ненавязчивые границы */
-  --shadow-color: rgba(0, 0, 0, 0.08); /* Деликатные тени */
+  --background-light: #F0F2F5; /* Very light, neutral background */
+  --background-dark: #FFFFFF; /* White for contrast */
+  --text-color-primary: #2C3E50; /* Dark gray, almost black */
+  --text-color-secondary: #7F8C8D; /* Light gray */
+  --border-color: #E0E0E0; /* Soft, unobtrusive borders */
+  --shadow-color: rgba(0, 0, 0, 0.08); /* Delicate shadows */
 
-  /* Шрифты: пара для создания стиля */
+  /* Fonts: a pair to create style */
   --font-main: 'Open Sans', sans-serif;
-  --font-heading: 'Playfair Display', serif; /* Более элегантный шрифт для заголовков */
+  --font-heading: 'Playfair Display', serif; /* More elegant font for headings */
 
-  /* Размеры и отступы */
+  /* Sizes and spacing */
   --font-size-base: 1rem;
   --font-size-sm: 0.9rem;
   --font-size-md: 1.25rem;
@@ -30,14 +30,14 @@
   --spacing-lg: 64px;
   --spacing-xl: 96px;
 
-  /* Динамические размеры */
+  /* Dynamic sizes */
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --box-shadow-sm: 0 4px 12px var(--shadow-color);
   --box-shadow-md: 0 8px 20px var(--shadow-color);
 }
 
-/* Общие стили и сброс */
+/* General styles and reset */
 * {
   margin: 0;
   padding: 0;
@@ -95,7 +95,7 @@ a {
   border-radius: 5px;
 }
 
-/* Кнопки */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -134,13 +134,13 @@ a {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Сетка */
+/* Grid layout */
 .grid {
   display: grid;
   gap: var(--spacing-md);
 }
 
-/* Шапка */
+/* Header */
 .header {
   background-color: var(--background-dark);
   padding: var(--spacing-sm) 0;
@@ -209,7 +209,7 @@ a {
     outline: none;
 }
 
-/* Герой */
+/* Hero section */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-bg.jpg') center/cover no-repeat;
   color: white;
@@ -245,7 +245,7 @@ a {
   gap: var(--spacing-md);
 }
 
-/* О процедуре */
+/* About the procedure */
 .about {
   padding: var(--spacing-xl) 0;
 }
@@ -290,7 +290,7 @@ a {
   color: var(--text-color-secondary);
 }
 
-/* Преимущества */
+/* Advantages */
 .whyus {
   padding: var(--spacing-xl) 0;
   background-color: var(--background-light);
@@ -322,7 +322,7 @@ a {
   color: var(--text-color-secondary);
 }
 
-/* Команда */
+/* Team */
 .team {
   padding: var(--spacing-xl) 0;
   background-color: var(--background-dark);
@@ -362,7 +362,7 @@ a {
   padding-bottom: var(--spacing-sm);
 }
 
-/* Галерея */
+/* Gallery */
 .gallery {
   padding: var(--spacing-xl) 0;
 }
@@ -401,7 +401,7 @@ a {
   border: none;
 }
 
-/* Цены */
+/* Pricing */
 .pricing {
   padding: var(--spacing-xl) 0;
   background-color: var(--background-light);
@@ -441,7 +441,7 @@ a {
   font-weight: 600;
 }
 
-/* Форма записи */
+/* Booking form */
 .booking {
   padding: var(--spacing-xl) 0;
   background-color: var(--background-dark);
@@ -478,7 +478,7 @@ a {
   resize: vertical;
 }
 
-/* Контакты */
+/* Contacts */
 .contact {
   padding: var(--spacing-xl) 0;
 }
@@ -537,7 +537,7 @@ a {
 
 
 /* --- */
-/* FAQ - исправленная версия для плавной анимации */
+/* FAQ - corrected version for smooth animation */
 /* --- */
 .faq__item {
   cursor: pointer;
@@ -560,17 +560,17 @@ a {
 }
 
 .faq__item p {
-  /* Важно: устанавливаем начальную высоту 0 и добавляем переход */
+  /* Important: set initial height to 0 and add a transition */
   max-height: 0;
-  overflow: hidden; /* Скрываем текст, который выходит за границы */
-  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Плавный и красивый переход */
+  overflow: hidden; /* Hide overflowing text */
+  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth and beautiful transition */
   padding-top: 0;
   color: var(--text-color-secondary);
 }
 
 .faq__item.active p {
-  /* max-height будет установлен через JavaScript,
-     поэтому здесь нужно только добавить отступ */
+  /* max-height will be set via JavaScript,
+     so here you only need to add padding */
   padding-top: var(--spacing-sm);
 }
 
@@ -580,7 +580,7 @@ a {
 
 
 
-/* Футер */
+/* Footer */
 .footer {
   background-color: var(--background-dark);
   padding: var(--spacing-lg) 0;
@@ -635,7 +635,7 @@ a {
   font-size: x-small;
 }
 
-/* Модальное окно */
+/* Modal window */
 .modal {
   position: fixed;
   top: 0;
@@ -681,7 +681,7 @@ a {
   min-width: 120px;
 }
 
-/* Адаптивность */
+/* Responsiveness */
 @media (max-width: 768px) {
   .section {
     padding: var(--spacing-lg) 0;
