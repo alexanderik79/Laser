@@ -37,8 +37,8 @@ $message = "New Booking:\nName: $name\nPhone: $phone\nService: $service\nComment
 // $telegramBotToken = $env['TELEGRAM_BOT_TOKEN'];
 // $telegramChatId = $env['TELEGRAM_CHAT_ID'];
 
-$telegramBotToken = '7670576657:AAGWnzzovQNQ4pOmoT8q2cD0IM9uC4Q-4iI';
-$telegramChatId = '979696456';
+$telegramBotToken = "7670576657:AAGWnzzovQNQ4pOmoT8q2cD0IM9uC4Q-4iI";
+$telegramChatId = "979696456";
 
 $url = "https://api.telegram.org/bot$telegramBotToken/sendMessage";
 
