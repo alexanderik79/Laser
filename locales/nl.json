@@ -4,7 +4,7 @@
     "description": "Professionele laserontharing in [Stad]. Veilig, snel, effectief. Boek nu!"
   },
   "header": {
-    "logo": "Laser Nadiia",
+    "logo": "Laser By Nadiia",
     "nav": {
       "about": "Over",
       "whyus": "Waarom Wij",
@@ -46,10 +46,10 @@
   "team": {
     "title": "Onze Experts",
     "members": {
-      "anna": "Anna",
-      "anna_text": "5 jaar ervaring",
-      "maria": "Maria",
-      "maria_text": "3 jaar ervaring"
+      "nadiia": "Nadiia",
+      "nadiia_text": "5 jaar ervaring",
+      "sofiia": "Sofiia",
+      "sofiia_text": "3 jaar ervaring"
     }
   },
   "gallery": {
@@ -65,6 +65,7 @@
       "bikini": "Bikini",
       "bikini_price": "$80",
       "underarms": "Oksels",
+      "arms": "Handen",
       "underarms_price": "$50"
     },
     "promo": "Eerste Sessie -20% Korting!"
@@ -78,7 +79,8 @@
       "services": {
         "legs": "Benen",
         "bikini": "Bikini",
-        "underarms": "Oksels"
+        "underarms": "Oksels",
+        "arms": "Handen"
       },
       "comment": "Opmerking",
       "submit": "Verzenden",
@@ -111,17 +113,17 @@
     }
   },
   "footer": {
-    "logo": "Laser Nadiia",
+    "logo": "Laser By Nadiia",
     "privacy": "Privacybeleid",
-    "copyright": "© 2025 Laser Nadiia. Alle rechten voorbehouden."
+    "copyright": "© 2025 Laser By Nadiia. Alle rechten voorbehouden."
   },
   "privacy": {
     "meta": {
-      "title": "Privacybeleid - Laser Nadiia",
-      "description": "Lees hoe Laser Nadiia uw persoonsgegevens beschermt en uw privacy waarborgt."
+      "title": "Privacybeleid - Laser By Nadiia",
+      "description": "Lees hoe Laser By Nadiia uw persoonsgegevens beschermt en uw privacy waarborgt."
     },
     "title": "Privacybeleid",
-    "intro": "Bij Laser Nadiia hechten we veel waarde aan uw privacy en zetten we ons in om uw persoonsgegevens te beschermen.",
+    "intro": "Bij Laser By Nadiia hechten we veel waarde aan uw privacy en zetten we ons in om uw persoonsgegevens te beschermen.",
     "collection": {
       "title": "Gegevensverzameling",
       "text": "We verzamelen persoonlijke informatie zoals uw naam, telefoonnummer en e-mailadres wanneer u ons boekingsformulier invult of contact met ons opneemt."

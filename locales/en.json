@@ -4,7 +4,7 @@
     "description": "Professional laser hair removal in [City]. Safe, fast, effective. Book now!"
   },
   "header": {
-    "logo": "Laser Nadiia",
+    "logo": "Laser By Nadiia",
     "nav": {
       "about": "About",
       "whyus": "Why Us",
@@ -46,10 +46,10 @@
   "team": {
     "title": "Our Experts",
     "members": {
-      "anna": "Anna",
-      "anna_text": "5 years of experience",
-      "maria": "Maria",
-      "maria_text": "3 years of experience"
+      "nadiia": "Nadiia",
+      "nadiia_text": "5 years of experience",
+      "sofiia": "Sofiia",
+      "sofiia_text": "3 years of experience"
     }
   },
   "gallery": {
@@ -65,6 +65,7 @@
       "bikini": "Bikini",
       "bikini_price": "$80",
       "underarms": "Underarms",
+      "arms": "Arms",
       "underarms_price": "$50"
     },
     "promo": "First Session -20% Off!"
@@ -78,7 +79,8 @@
       "services": {
         "legs": "Legs",
         "bikini": "Bikini",
-        "underarms": "Underarms"
+        "underarms": "Underarms",
+        "arms": "Arms"
       },
       "comment": "Comment",
       "submit": "Submit",
@@ -111,17 +113,17 @@
     }
   },
   "footer": {
-    "logo": "Laser Nadiia",
+    "logo": "Laser By Nadiia",
     "privacy": "Privacy Policy",
-    "copyright": "© 2025 Laser Nadiia. All rights reserved."
+    "copyright": "© 2025 Laser By Nadiia. All rights reserved."
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy - Laser Nadiia",
-      "description": "Learn how Laser Nadiia protects your personal data and ensures privacy."
+      "title": "Privacy Policy - Laser By Nadiia",
+      "description": "Learn how Laser By Nadiia protects your personal data and ensures privacy."
     },
     "title": "Privacy Policy",
-    "intro": "At Laser Nadiia, we value your privacy and are committed to protecting your personal data.",
+    "intro": "At Laser By Nadiia, we value your privacy and are committed to protecting your personal data.",
     "collection": {
       "title": "Data Collection",
       "text": "We collect personal information such as your name, phone number, and email when you fill out our booking form or contact us."

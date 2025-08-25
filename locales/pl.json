@@ -4,7 +4,7 @@
     "description": "Profesjonalna depilacja laserowa w [Miasto]. Bezpiecznie, szybko, skutecznie. Zarezerwuj już teraz!"
   },
   "header": {
-    "logo": "Laser Nadiia",
+    "logo": "Laser By Nadiia",
     "nav": {
       "about": "O nas",
       "whyus": "Dlaczego my",
@@ -46,10 +46,10 @@
   "team": {
     "title": "Nasi Eksperci",
     "members": {
-      "anna": "Anna",
-      "anna_text": "5 lat doświadczenia",
-      "maria": "Maria",
-      "maria_text": "3 lata doświadczenia"
+      "nadiia": "Nadiia",
+      "nadiia_text": "5 lat doświadczenia",
+      "sofiia": "Sofiia",
+      "sofiia_text": "3 lata doświadczenia"
     }
   },
   "gallery": {
@@ -65,6 +65,7 @@
       "bikini": "Bikini",
       "bikini_price": "80$",
       "underarms": "Pachy",
+      "arms": "Ręce",
       "underarms_price": "50$"
     },
     "promo": "Pierwsza Sesja -20% Zniżki!"
@@ -78,7 +79,8 @@
       "services": {
         "legs": "Nogi",
         "bikini": "Bikini",
-        "underarms": "Pachy"
+        "underarms": "Pachy",
+        "arms": "Ręce"
       },
       "comment": "Komentarz",
       "submit": "Wyślij",
@@ -111,17 +113,17 @@
     }
   },
   "footer": {
-    "logo": "Laser Nadiia",
+    "logo": "Laser By Nadiia",
     "privacy": "Polityka Prywatności",
-    "copyright": "© 2025 Laser Nadiia. Wszelkie prawa zastrzeżone."
+    "copyright": "© 2025 Laser By Nadiia. Wszelkie prawa zastrzeżone."
   },
   "privacy": {
     "meta": {
-      "title": "Polityka Prywatności - Laser Nadiia",
-      "description": "Dowiedz się, jak Laser Nadiia chroni Twoje dane osobowe i zapewnia prywatność."
+      "title": "Polityka Prywatności - Laser By Nadiia",
+      "description": "Dowiedz się, jak Laser By Nadiia chroni Twoje dane osobowe i zapewnia prywatność."
     },
     "title": "Polityka Prywatności",
-    "intro": "W Laser Nadiia cenimy Twoją prywatność i zobowiązujemy się do ochrony Twoich danych osobowych.",
+    "intro": "W Laser By Nadiia cenimy Twoją prywatność i zobowiązujemy się do ochrony Twoich danych osobowych.",
     "collection": {
       "title": "Gromadzenie Danych",
       "text": "Gromadzimy dane osobowe, takie jak imię, numer telefonu i adres e-mail, gdy wypełniasz nasz formularz rezerwacji lub kontaktujesz się z nami."
