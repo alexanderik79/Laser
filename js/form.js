@@ -49,8 +49,8 @@ export function initForm() {
 
     // Формируем сообщение для Telegram
     const message = `New Booking:\nName: ${name}\nPhone: ${phone}\nService: ${i18next.t(`booking.form.services.${service}`)}\nComment: ${comment || 'None'}`;
-    const telegramBotToken = '7670576657:AAGWnzzovQNQ4pOmoT8q2cD0IM9uC4Q-4iI';
-    const telegramChatId = '979696456';
+    const telegramBotToken = '8016220686:AAEe8gtXFBfmqJBK9U1uahJeiG0noNCGy60';
+    const telegramChatId = '-1002978004505';
 
     try {
       // Отправка в Telegram
