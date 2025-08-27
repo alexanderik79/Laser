@@ -162,6 +162,10 @@ a {
   color: var(--primary-color);
 }
 
+.img-logo {
+  height: 50px;
+}
+
 .nav {
   display: flex;
   gap: var(--spacing-md);
