@@ -216,6 +216,7 @@ a {
 /* Hero section */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-bg.jpg') center/cover no-repeat;
+  background-attachment: fixed;
   color: white;
   padding: var(--spacing-xl) 0;
   text-align: center;
