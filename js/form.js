@@ -49,8 +49,7 @@ export function initForm() {
 
     // Формируем сообщение для Telegram
     // const message = `New Booking:\nName: ${name}\nPhone: ${phone}\nService: ${i18next.t(`booking.form.services.${service}`)}\nComment: ${comment || 'None'}`;
-    const message = `
-            *New Booking:*
+    const message = `*New Booking:*
             ------------------------------
             *Name:* ${name}
             *Phone:* ${phone}
