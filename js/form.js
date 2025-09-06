@@ -48,7 +48,15 @@ export function initForm() {
     }
 
     // Формируем сообщение для Telegram
-    const message = `New Booking:\nName: ${name}\nPhone: ${phone}\nService: ${i18next.t(`booking.form.services.${service}`)}\nComment: ${comment || 'None'}`;
+    // const message = `New Booking:\nName: ${name}\nPhone: ${phone}\nService: ${i18next.t(`booking.form.services.${service}`)}\nComment: ${comment || 'None'}`;
+    const message = `
+            *New Booking:*
+            ------------------------------
+            *Name:* ${name}
+            *Phone:* ${phone}
+            *Message:*
+            ${comment || 'None'}
+        `;
     const telegramBotToken = '8016220686:AAEe8gtXFBfmqJBK9U1uahJeiG0noNCGy60';
     const telegramChatId = '-1002978004505';
 
