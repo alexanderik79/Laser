@@ -62,6 +62,7 @@ export function initForm() {
           body: JSON.stringify({
             chat_id: telegramChatId,
             text: message,
+            parse_mode: 'Markdown'
           }),
         }
       );
