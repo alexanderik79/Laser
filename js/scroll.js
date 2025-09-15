@@ -7,7 +7,7 @@ export function initScroll() {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         window.scrollTo({
-          top: targetElement.offsetTop - 60, // Учитываем высоту шапки
+          top: targetElement.offsetTop - 60,
           behavior: 'smooth',
         });
       }
