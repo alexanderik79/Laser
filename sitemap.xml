@@ -39,41 +39,6 @@
         />
     </url>
 
-    <url>
-        <loc>https://laser-nadiia.netlify.app/privacy.html</loc>
-        <lastmod>2025-11-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://laser-nadiia.netlify.app/privacy.html"
-        />
-        <xhtml:link 
-            rel="alternate"
-            hreflang="nl"
-            href="https://laser-nadiia.netlify.app/nl/privacy.html"
-        />
-        <xhtml:link 
-            rel="alternate"
-            hreflang="ru"
-            href="https://laser-nadiia.netlify.app/ru/privacy.html"
-        />
-        <xhtml:link 
-            rel="alternate"
-            hreflang="uk"
-            href="https://laser-nadiia.netlify.app/uk/privacy.html"
-        />
-        <xhtml:link 
-            rel="alternate"
-            hreflang="pl"
-            href="https://laser-nadiia.netlify.app/pl/privacy.html"
-        />
-        <xhtml:link 
-            rel="alternate"
-            hreflang="x-default"
-            href="https://laser-nadiia.netlify.app/privacy.html"
-        />
-    </url>
+  
 
 </urlset>
