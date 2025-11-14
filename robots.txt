@@ -11,4 +11,4 @@ Allow: /
 
 # Ссылка на карту сайта Sitemap.xml
 # Это самый важный элемент, который сообщает роботам о структуре всех ваших 10 страниц.
-Sitemap: https://laser-nadiia.netlify.app/sitemap.xml
+Sitemap: https://laser-by-nadiia.com/sitemap.xml

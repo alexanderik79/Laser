@@ -3,42 +3,77 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <url>
-        <loc>https://laser-nadiia.netlify.app/</loc>
+        <loc>https://laser-by-nadiia.com/</loc>
         <lastmod>2025-11-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         <xhtml:link 
             rel="alternate"
             hreflang="en"
-            href="https://laser-nadiia.netlify.app/"
+            href="https://laser-by-nadiia.com/"
         />
         <xhtml:link 
             rel="alternate"
             hreflang="nl"
-            href="https://laser-nadiia.netlify.app/nl/"
+            href="https://laser-by-nadiia.com/nl/"
         />
         <xhtml:link 
             rel="alternate"
             hreflang="ru"
-            href="https://laser-nadiia.netlify.app/ru/"
+            href="https://laser-by-nadiia.com/ru/"
         />
         <xhtml:link 
             rel="alternate"
             hreflang="uk"
-            href="https://laser-nadiia.netlify.app/uk/"
+            href="https://laser-by-nadiia.com/uk/"
         />
         <xhtml:link 
             rel="alternate"
             hreflang="pl"
-            href="https://laser-nadiia.netlify.app/pl/"
+            href="https://laser-by-nadiia.com/pl/"
         />
         <xhtml:link 
             rel="alternate"
             hreflang="x-default"
-            href="https://laser-nadiia.netlify.app/"
+            href="https://laser-by-nadiia.com/"
         />
     </url>
 
-  
+    <url>
+        <loc>https://laser-by-nadiia.com/privacy.html</loc>
+        <lastmod>2025-11-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link 
+            rel="alternate"
+            hreflang="en"
+            href="https://laser-by-nadiia.com/privacy.html"
+        />
+        <xhtml:link 
+            rel="alternate"
+            hreflang="nl"
+            href="https://laser-by-nadiia.com/nl/privacy.html"
+        />
+        <xhtml:link 
+            rel="alternate"
+            hreflang="ru"
+            href="https://laser-by-nadiia.com/ru/privacy.html"
+        />
+        <xhtml:link 
+            rel="alternate"
+            hreflang="uk"
+            href="https://laser-by-nadiia.com/uk/privacy.html"
+        />
+        <xhtml:link 
+            rel="alternate"
+            hreflang="pl"
+            href="https://laser-by-nadiia.com/pl/privacy.html"
+        />
+        <xhtml:link 
+            rel="alternate"
+            hreflang="x-default"
+            href="https://laser-by-nadiia.com/privacy.html"
+        />
+    </url>
 
 </urlset>
