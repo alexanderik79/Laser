@@ -1,54 +1,64 @@
 // src/js/form.js
+
+// Функция показа модального окна
 function showModal(message) {
   const modal = document.getElementById('modal');
   const modalMessage = document.getElementById('modal-message');
   const modalClose = document.getElementById('modal-close');
 
+  if (!modal || !modalMessage || !modalClose) return;
+
   modalMessage.textContent = message;
-  // Вместо modal.style.display = 'flex'
   modal.classList.add('is-visible');
 
-  // Добавляем обработчик события для закрытия модалки
-  // Используем .removeEventListener для предотвращения дублирования
-  function closeModal() {
+  // Закрытие по кнопке
+  const closeHandler = () => {
     modal.classList.remove('is-visible');
-    modalClose.removeEventListener('click', closeModal);
-  }
+    modalClose.removeEventListener('click', closeHandler);
+  };
+  modalClose.addEventListener('click', closeHandler);
 
-  modalClose.addEventListener('click', closeModal);
-
-  // Также закрываем модалку при клике вне её
-  modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      closeModal();
+  // Закрытие при клике вне модалки
+  const outsideClickHandler = (e) => {
+    if (e.target === modal) {
+      closeHandler();
+      modal.removeEventListener('click', outsideClickHandler);
     }
-  });
+  };
+  modal.addEventListener('click', outsideClickHandler);
 }
 
+// Основная функция инициализации формы
 export function initForm() {
   const form = document.getElementById('booking-form');
+  if (!form) return;
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     const formData = new FormData(form);
-    const name = formData.get('name').trim();
-    const phone = formData.get('phone').trim();
-    const service = formData.get('service');
-    const comment = formData.get('comment') || '';
+    const name = formData.get('name')?.trim();
+    const phone = formData.get('phone')?.trim();
+    const service = formData.get('service') || 'Not selected';
+    const comment = formData.get('comment')?.trim() || 'None';
 
-    // Валидация имени
-    if (!name.match(/^[A-Za-z\s]{2,}$/)) {
-      showModal(i18next.t('booking.form.error_name'));
+    // === ВАЛИДАЦИЯ ===
+    if (!name || name.length < 2 || !/^[A-Za-z\s]+$/.test(name)) {
+      showModal('Please enter a valid name (letters only).');
       return;
     }
 
-    // Валидация телефона
-    if (!phone.match(/^\+?\d{9,15}$/)) {
-      showModal(i18next.t('booking.form.error_phone'));
+    if (!phone || !/^\+?\d{9,15}$/.test(phone)) {
+      showModal('Please enter a valid phone number (9–15 digits).');
       return;
     }
 
-    // Формируем сообщение для Telegram
-    // const message = `New Booking:\nName: ${name}\nPhone: ${phone}\nService: ${i18next.t(`booking.form.services.${service}`)}\nComment: ${comment || 'None'}`;
+    if (!service || service === 'Not selected') {
+      showModal('Please select a service.');
+      return;
+    }
+
+    // === Сообщение для Telegram ===
     const message = `*New Booking:*
             ------------------------------
             *Name:* ${name}
@@ -60,8 +70,7 @@ export function initForm() {
     const telegramChatId = '-1002978004505';
 
     try {
-      // Отправка в Telegram
-      const telegramResponse = await fetch(
+      const response = await fetch(
         `https://api.telegram.org/bot${telegramBotToken}/sendMessage`,
         {
           method: 'POST',
@@ -69,94 +78,20 @@ export function initForm() {
           body: JSON.stringify({
             chat_id: telegramChatId,
             text: message,
-            parse_mode: 'Markdown'
+            parse_mode: 'Markdown',
           }),
         }
       );
 
-      if (!telegramResponse.ok) throw new Error('Telegram API error');
+      if (!response.ok) throw new Error('Telegram error');
 
-      showModal(i18next.t('booking.form.success'));
-      form.reset();
+      // УСПЕХ
+      showModal('Your message has been sent successfully!');
+      form.reset(); // ОЧИЩАЕМ ФОРМУ
+
     } catch (error) {
-      console.error('Error:', error);
-      showModal(i18next.t('booking.form.error'));
+      console.error('Send error:', error);
+      showModal('Failed to send. Please try again or contact via WhatsApp.');
     }
   });
 }
-
-
-
-
-
-// // src/js/form.js
-// function showModal(message) {
-//   const modal = document.getElementById('modal');
-//   const modalMessage = document.getElementById('modal-message');
-//   const modalClose = document.getElementById('modal-close');
-
-//   modalMessage.textContent = message;
-//   modal.classList.add('is-visible');
-
-//   function closeModal() {
-//     modal.classList.remove('is-visible');
-//     modalClose.removeEventListener('click', closeModal);
-//   }
-
-//   modalClose.addEventListener('click', closeModal);
-
-//   modal.addEventListener('click', (event) => {
-//     if (event.target === modal) {
-//       closeModal();
-//     }
-//   });
-// }
-
-// export function initForm() {
-//   const form = document.getElementById('booking-form');
-//   form.addEventListener('submit', async (e) => {
-//     e.preventDefault();
-//     const formData = new FormData(form);
-//     const name = formData.get('name').trim();
-//     const phone = formData.get('phone').trim();
-//     const service = formData.get('service');
-//     const comment = formData.get('comment') || '';
-
-//     // Валидация имени
-//     if (!name.match(/^[A-Za-z\s]{2,}$/)) {
-//       showModal(i18next.t('booking.form.error_name'));
-//       return;
-//     }
-
-//     // Валидация телефона
-//     if (!phone.match(/^\+?\d{9,15}$/)) {
-//       showModal(i18next.t('booking.form.error_phone'));
-//       return;
-//     }
-
-//     // Отправка на сервер
-//     try {
-//       const response = await fetch('/api/send-telegram.php', {
-//         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify({
-//           name,
-//           phone,
-//           service: i18next.t(`booking.form.services.${service}`),
-//           comment,
-//         }),
-//       });
-
-//       const result = await response.json();
-//       if (!response.ok || result.error) {
-//         throw new Error(result.error || 'Server error');
-//       }
-
-//       showModal(i18next.t('booking.form.success'));
-//       form.reset();
-//     } catch (error) {
-//       console.error('Error:', error);
-//       showModal(i18next.t('booking.form.error'));
-//     }
-//   });
-// }
