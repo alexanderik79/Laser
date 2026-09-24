@@ -119,9 +119,11 @@ body {
     gap: 12px; /* Менша відстань між полями (було 18) */
 }
 
+/* НАЛАШТУВАННЯ ОДНОГО РЯДКА */
 .form-row {
     display: flex;
-    gap: 10px;
+    gap: 8px; /* Зменшена відстань між колонками */
+    width: 100%;
 }
 
 .input-group {
@@ -129,23 +131,37 @@ body {
     width: 100%;
 }
 
-.input-group.half {
-    flex: 1;
-}
+/* Пропорції для одного рядка: Дата(45%), Час(32%), Хв(23%) */
+.flex-date { flex: 1.5; }
+.flex-time { flex: 1.1; }
+.flex-dur { flex: 0.8; }
 
-/* Поля стали нижчими */
+/* ЗБІЛЬШЕНІ ПОЛЯ ТА ШРИФТИ */
 input, select, textarea {
     width: 100%;
     background: var(--input-bg);
     border: 1px solid var(--input-border);
     color: var(--text-main);
-    padding: 18px 14px 6px; /* Менша висота полів */
+    padding: 22px 12px 6px; /* Збільшено висоту поля для комфортного натискання */
     border-radius: var(--radius);
-    font-size: 14px;
+    font-size: 16px; /* БІЛЬШИЙ ШРИФТ */
+    font-weight: 500; /* Робимо текст виразнішим */
     font-family: inherit;
     box-sizing: border-box;
     transition: all 0.2s ease;
     appearance: none; 
+}
+
+/* Центрування тексту у найменшому полі (Хвилини) */
+.flex-dur input {
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+.flex-dur label {
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 textarea {
@@ -158,16 +174,16 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 0 2px var(--primary-glow);
 }
 
-/* Компактні плаваючі підказки */
+/* Більші та читабельні підказки (Labels) */
 label {
     position: absolute;
-    left: 14px;
-    top: 14px; /* Піднято трохи вище (було 18) */
+    left: 12px;
+    top: 16px; /* Опущено відповідно до нової висоти поля */
     color: var(--text-muted);
-    font-size: 14px;
+    font-size: 15px; /* Більша підказка до введення тексту */
     pointer-events: none;
     transition: all 0.2s ease;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 input:focus ~ label,
@@ -175,23 +191,23 @@ input:not(:placeholder-shown) ~ label,
 textarea:focus ~ label,
 textarea:not(:placeholder-shown) ~ label,
 label.active {
-    top: 4px; /* Сильніше підтискається до верхнього краю */
-    font-size: 9px;
+    top: 4px; 
+    font-size: 10px; /* Активний надпис зверху */
     color: var(--primary);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
-/* Менша кнопка відправки */
+/* Більша кнопка відправки */
 .btn-submit {
     background: var(--primary);
     color: #FFFFFF;
     border: none;
-    padding: 14px; /* Менша висота (було 18) */
+    padding: 16px; /* Зроблено кнопку масивнішою */
     border-radius: var(--radius);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600; /* Жирніший шрифт на кнопці */
     letter-spacing: 1px;
     margin-top: 5px; /* Ближче до останнього поля */
     cursor: pointer;

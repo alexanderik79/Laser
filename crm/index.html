@@ -38,20 +38,21 @@
                 <label for="clientName">Ім'я клієнта та послуга</label>
             </div>
 
-            <div class="input-group">
-                <input type="date" id="date" required>
-                <label for="date" class="active">Дата</label>
-            </div>
-
+            <!-- ДАТА, ЧАС ТА ХВИЛИНИ В ОДНОМУ РЯДКУ -->
             <div class="form-row">
-                <div class="input-group half">
+                <div class="input-group flex-date">
+                    <input type="date" id="date" required>
+                    <label for="date" class="active">Дата</label>
+                </div>
+                
+                <div class="input-group flex-time">
                     <input type="time" id="startTime" required>
                     <label for="startTime" class="active">Час</label>
                 </div>
                 
-                <div class="input-group half">
+                <div class="input-group flex-dur">
                     <input type="number" id="duration" value="60" min="15" step="15" required>
-                    <label for="duration" class="active">Хв (з прибиранням)</label>
+                    <label for="duration" class="active">Хв</label>
                 </div>
             </div>
 
