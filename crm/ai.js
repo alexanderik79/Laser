@@ -6,34 +6,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const dictateBtn = document.getElementById('dictateBtn');
     const voiceStatus = document.getElementById('voiceStatus');
 
-    // Настройка Web Speech API
+    // Налаштування Web Speech API
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     
     if (!SpeechRecognition) {
         dictateBtn.style.display = 'none';
-        voiceStatus.textContent = 'Ваш браузер не поддерживает голосовой ввод.';
+        voiceStatus.textContent = 'Ваш браузер не підтримує голосове введення.';
         return;
     }
 
     const recognition = new SpeechRecognition();
-    recognition.lang = 'ru-RU'; 
+    recognition.lang = 'uk-UA'; // Змінено на українську мову розпізнавання
     recognition.continuous = true; 
     recognition.interimResults = true; 
 
     let isRecording = false;
     let finalTranscript = ''; 
 
-    // Обработчик кнопки
+    // Обробник кнопки
     dictateBtn.addEventListener('click', () => {
-        // ПРОВЕРКА КЛЮЧА ПРИ НАЖАТИИ
+        // ПЕРЕВІРКА КЛЮЧА ПРИ НАТИСКАННІ
         if (!OPENAI_API_KEY) {
-            const userInput = prompt('Пожалуйста, введите ваш API ключ от OpenAI (начинается с sk-...):');
+            const userInput = prompt('Будь ласка, введіть ваш API ключ від OpenAI (починається з sk-...):');
             if (userInput && userInput.trim() !== '') {
                 OPENAI_API_KEY = userInput.trim();
                 localStorage.setItem('saved_openai_key', OPENAI_API_KEY);
-                alert('Ключ успешно сохранен в памяти телефона!');
+                alert('Ключ успішно збережено в пам\'яті телефону!');
             } else {
-                alert('Без ключа голосовой ИИ не сможет работать.');
+                alert('Без ключа голосовий ШІ не зможе працювати.');
                 return;
             }
         }
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
     recognition.onstart = () => {
         isRecording = true;
         dictateBtn.classList.add('recording');
-        dictateBtn.textContent = '⏹ Завершить диктовку';
-        voiceStatus.textContent = 'Слушаю... (можете делать паузы)';
+        dictateBtn.textContent = '⏹ Завершити диктування';
+        voiceStatus.textContent = 'Слухаю... (можете робити паузи)';
     };
 
     recognition.onresult = (event) => {
@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 interimTranscript += event.results[i][0].transcript;
             }
         }
-        voiceStatus.textContent = 'Распознано: ' + finalTranscript + interimTranscript;
+        // Відключено виведення тексту під час диктування, щоб інтерфейс не стрибав
+        // voiceStatus.textContent = 'Розпізнано: ' + finalTranscript + interimTranscript;
     };
 
     recognition.onend = async () => {
@@ -71,35 +72,37 @@ document.addEventListener('DOMContentLoaded', () => {
         dictateBtn.textContent = '🎙';
         
         if (finalTranscript.trim() === '') {
-            voiceStatus.textContent = 'Ничего не услышал. Попробуйте еще раз.';
+            voiceStatus.textContent = 'Нічого не почув. Спробуйте ще раз.';
             return;
         }
 
-        voiceStatus.textContent = 'Отправляю в OpenAI: "' + finalTranscript.trim() + '"...';
+        voiceStatus.textContent = 'Аналізую запит... ✨';
         await processWithOpenAI(finalTranscript.trim());
     };
 
     recognition.onerror = (event) => {
         isRecording = false;
         dictateBtn.classList.remove('recording');
-        dictateBtn.textContent = '🎤 Надиктовать ИИ';
+        dictateBtn.textContent = '🎤';
         if (event.error !== 'no-speech') {
-            voiceStatus.textContent = 'Ошибка микрофона: ' + event.error;
+            voiceStatus.textContent = 'Помилка мікрофона: ' + event.error;
         }
     };
 
     async function processWithOpenAI(text) {
         const today = new Date().toISOString().split('T')[0];
-        const systemPrompt = `Ты помощник администратора кабинета. Проанализируй текст и верни ТОЛЬКО JSON формат без лишних символов и без маркдауна (без \`\`\`json).
-Текущая дата для понимания слов "сегодня", "завтра": ${today}.
+        
+        // Системний промпт перекладено українською для кращого контексту
+        const systemPrompt = `Ти помічник адміністратора кабінету. Проаналізуй текст і поверни ТІЛЬКИ JSON формат без зайвих символів і без маркдауну (без \`\`\`json).
+Поточна дата для розуміння слів "сьогодні", "завтра": ${today}.
 
 Структура JSON:
 {
-  "clientName": "Имя клиента и название процедуры (кратко)",
-  "date": "Дата в формате YYYY-MM-DD",
-  "startTime": "Время в формате HH:MM",
-  "duration": число (длительность в минутах, если не сказано, ставь 60),
-  "description": "Пожелания, зоны, особенности (если нет - пустая строка)"
+  "clientName": "Ім'я клієнта та назва процедури (коротко)",
+  "date": "Дата у форматі YYYY-MM-DD",
+  "startTime": "Час у форматі HH:MM",
+  "duration": число (тривалість у хвилинах, якщо не сказано, став 60),
+  "description": "Побажання, зони, особливості (якщо немає - порожній рядок)"
 }`;
 
         try {
@@ -121,15 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (!response.ok) {
-                // Если ключ оказался нерабочим (например, удалили или закончились деньги)
+                // Якщо ключ виявився неробочим
                 if (response.status === 401) {
-                    localStorage.removeItem('saved_openai_key'); // Удаляем нерабочий ключ
+                    localStorage.removeItem('saved_openai_key');
                     OPENAI_API_KEY = null;
-                    voiceStatus.textContent = 'Ошибка авторизации. Ключ сброшен. Нажмите на микрофон, чтобы ввести новый.';
+                    voiceStatus.textContent = 'Помилка авторизації. Ключ скинуто. Натисніть на мікрофон, щоб ввести новий.';
                     return;
                 }
                 const errorData = await response.json();
-                voiceStatus.textContent = 'Ошибка доступа: ' + (errorData.error?.message || 'Неизвестная ошибка');
+                voiceStatus.textContent = 'Помилка доступу: ' + (errorData.error?.message || 'Невідома помилка');
                 return;
             }
 
@@ -140,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fillFormWithAiData(JSON.parse(aiText)); 
 
         } catch (error) {
-            voiceStatus.textContent = 'Не удалось извлечь данные. Заполните вручную.';
+            voiceStatus.textContent = 'Не вдалося отримати дані. Заповніть вручну.';
         }
     }
 
@@ -151,9 +154,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (parsedData.duration) document.getElementById('duration').value = parsedData.duration;
         if (parsedData.description) document.getElementById('description').value = parsedData.description;
 
-        voiceStatus.textContent = '✨ Форма успешно заполнена!';
+        voiceStatus.textContent = '✨ Форму успішно заповнено!';
         setTimeout(() => {
-            if(voiceStatus.textContent === '✨ Форма успешно заполнена!') {
+            if(voiceStatus.textContent === '✨ Форму успішно заповнено!') {
                 voiceStatus.textContent = '';
             }
         }, 4000);

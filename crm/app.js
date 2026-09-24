@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Формирование красивого описания для карточки в календаре
         let fullDescription = `Бронь кабинета.\nМастер: ${masterName}`;
         if (description.trim() !== '') {
-            fullDescription += `\n\nОсобенности процедуры:\n${description}`;
+            fullDescription += `\n\nОсобливості процедури:\n${description}`;
         }
 
         // Сборка финального URL-адреса
