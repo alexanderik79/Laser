@@ -1,4 +1,5 @@
 :root {
+    /* КОЛЬОРИ */
     --bg-main: #FFFFFF;
     --bg-card: #FAF6F5; 
     --primary: #D4B5B0; 
@@ -14,7 +15,18 @@
     --danger: #E28C8C;
     --danger-glow: rgba(226, 140, 140, 0.4);
     
-    --radius: 10px; /* Трохи менше заокруглення для економії місця */
+    /* РОЗМІРИ ШРИФТІВ (Змінюйте під себе) */
+    --fs-title: 20px;          /* Головне лого */
+    --fs-subtitle: 9px;        /* Підзаголовок лого */
+    --fs-mic-icon: 26px;       /* Розмір мікрофона */
+    --fs-status: 11px;         /* Статус під мікрофоном ("ready", "Слухаю...") */
+    --fs-input: 20px;          /* Текст, який ви вводите в поля (16px - ідеал для iOS) */
+    --fs-label: 15px;          /* Плаваюча підказка (велика) */
+    --fs-label-active: 10px;   /* Плаваюча підказка (коли піднялася вгору) */
+    --fs-btn: 20px;            /* Текст на головній кнопці збереження */
+
+    /* ІНШЕ */
+    --radius: 10px;
 }
 
 body {
@@ -25,7 +37,6 @@ body {
     color: var(--text-main);
     display: flex;
     justify-content: center;
-    /* Відцентровуємо по вертикалі. Якщо екран великий - форма буде по центру */
     align-items: center; 
     min-height: 100vh;
 }
@@ -33,14 +44,14 @@ body {
 .app-container {
     width: 100%;
     max-width: 420px; 
-    padding: 12px 16px; /* Зменшено зовнішні відступи */
+    padding: 12px 16px; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Кардинально зменшено відстань між блоками (було 25) */
+    gap: 12px; 
 }
 
-/* Компактний заголовок */
+/* Заголовок */
 .app-header {
     text-align: center;
     margin-bottom: 0;
@@ -48,7 +59,7 @@ body {
 
 .brand-title {
     margin: 0;
-    font-size: 20px; /* Менший шрифт логотипу (було 24) */
+    font-size: var(--fs-title);
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--text-main);
@@ -57,17 +68,17 @@ body {
 
 .brand-subtitle {
     margin: 2px 0 0;
-    font-size: 9px; /* Менший підзаголовок */
+    font-size: var(--fs-subtitle);
     text-transform: uppercase;
     letter-spacing: 3px;
     color: var(--primary);
 }
 
-/* Компактна Карточка ІІ */
+/* Карточка ІІ */
 .ai-card {
     background: var(--bg-card);
     border-radius: var(--radius);
-    padding: 12px; /* Зменшено відступи всередині блоку мікрофона */
+    padding: 12px; 
     text-align: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
@@ -76,12 +87,12 @@ body {
     background: #FFFFFF;
     color: var(--text-main);
     border: 1px solid var(--input-border);
-    width: 60px;  /* Менша кнопка (було 80) */
+    width: 60px;  
     height: 60px;
     border-radius: 50%;
     padding: 0;
     margin: 0 auto;
-    font-size: 26px; /* Менший мікрофон (було 35) */
+    font-size: var(--fs-mic-icon); 
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -105,24 +116,24 @@ body {
 }
 
 .status-text {
-    margin-top: 8px; /* Ближче до кнопки */
-    font-size: 11px;
+    margin-top: 8px; 
+    font-size: var(--fs-status);
     color: var(--text-muted);
     min-height: 14px;
     letter-spacing: 0.5px;
 }
 
-/* Форма та компактні поля */
+/* Форма */
 .booking-form {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Менша відстань між полями (було 18) */
+    gap: 12px; 
 }
 
-/* НАЛАШТУВАННЯ ОДНОГО РЯДКА */
+/* Рядок Дата/Час/Хв */
 .form-row {
     display: flex;
-    gap: 8px; /* Зменшена відстань між колонками */
+    gap: 8px; 
     width: 100%;
 }
 
@@ -131,28 +142,26 @@ body {
     width: 100%;
 }
 
-/* Пропорції для одного рядка: Дата(45%), Час(32%), Хв(23%) */
 .flex-date { flex: 1.5; }
 .flex-time { flex: 1.1; }
 .flex-dur { flex: 0.8; }
 
-/* ЗБІЛЬШЕНІ ПОЛЯ ТА ШРИФТИ */
+/* Поля вводу */
 input, select, textarea {
     width: 100%;
     background: var(--input-bg);
     border: 1px solid var(--input-border);
     color: var(--text-main);
-    padding: 22px 12px 6px; /* Збільшено висоту поля для комфортного натискання */
+    padding: 22px 12px 6px; 
     border-radius: var(--radius);
-    font-size: 16px; /* БІЛЬШИЙ ШРИФТ */
-    font-weight: 500; /* Робимо текст виразнішим */
+    font-size: var(--fs-input);
+    font-weight: 500; 
     font-family: inherit;
     box-sizing: border-box;
     transition: all 0.2s ease;
     appearance: none; 
 }
 
-/* Центрування тексту у найменшому полі (Хвилини) */
 .flex-dur input {
     padding-left: 4px;
     padding-right: 4px;
@@ -174,13 +183,13 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 0 2px var(--primary-glow);
 }
 
-/* Більші та читабельні підказки (Labels) */
+/* Підказки (Labels) */
 label {
     position: absolute;
     left: 12px;
-    top: 16px; /* Опущено відповідно до нової висоти поля */
+    top: 16px; 
     color: var(--text-muted);
-    font-size: 15px; /* Більша підказка до введення тексту */
+    font-size: var(--fs-label);
     pointer-events: none;
     transition: all 0.2s ease;
     font-weight: 400;
@@ -192,24 +201,24 @@ textarea:focus ~ label,
 textarea:not(:placeholder-shown) ~ label,
 label.active {
     top: 4px; 
-    font-size: 10px; /* Активний надпис зверху */
+    font-size: var(--fs-label-active);
     color: var(--primary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
 
-/* Більша кнопка відправки */
+/* Кнопка */
 .btn-submit {
     background: var(--primary);
     color: #FFFFFF;
     border: none;
-    padding: 16px; /* Зроблено кнопку масивнішою */
+    padding: 16px; 
     border-radius: var(--radius);
-    font-size: 16px;
-    font-weight: 600; /* Жирніший шрифт на кнопці */
+    font-size: var(--fs-btn);
+    font-weight: 600; 
     letter-spacing: 1px;
-    margin-top: 5px; /* Ближче до останнього поля */
+    margin-top: 5px; 
     cursor: pointer;
     box-shadow: 0 4px 10px var(--primary-glow);
     transition: transform 0.1s, background-color 0.3s;

@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     recognition.onstart = () => {
         isRecording = true;
         dictateBtn.classList.add('recording');
-        dictateBtn.textContent = '⏹ Завершити диктування';
+        dictateBtn.textContent = '⏹';
         voiceStatus.textContent = 'Слухаю... (можете робити паузи)';
     };
 
