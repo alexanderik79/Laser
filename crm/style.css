@@ -18,7 +18,7 @@
     /* РОЗМІРИ ШРИФТІВ (Змінюйте під себе) */
     --fs-title: 20px;          /* Головне лого */
     --fs-subtitle: 9px;        /* Підзаголовок лого */
-    --fs-mic-icon: 26px;       /* Розмір мікрофона */
+    --fs-mic-icon: 36px;       /* Розмір мікрофона */
     --fs-status: 11px;         /* Статус під мікрофоном ("ready", "Слухаю...") */
     --fs-input: 20px;          /* Текст, який ви вводите в поля (16px - ідеал для iOS) */
     --fs-label: 15px;          /* Плаваюча підказка (велика) */
@@ -98,7 +98,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.34);
 }
 
 .btn-voice.recording {
