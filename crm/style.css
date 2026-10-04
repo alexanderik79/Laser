@@ -15,13 +15,13 @@
     --danger: #E28C8C;
     --danger-glow: rgba(226, 140, 140, 0.4);
     
-    /* РОЗМІРИ ШРИФТІВ (Змінюйте під себе) */
+    /* РОЗМІРИ ШРИФТІВ */
     --fs-title: 20px;          /* Головне лого */
     --fs-subtitle: 9px;        /* Підзаголовок лого */
     --fs-mic-icon: 36px;       /* Розмір мікрофона */
-    --fs-status: 11px;         /* Статус під мікрофоном ("ready", "Слухаю...") */
-    --fs-input: 20px;          /* Текст, який ви вводите в поля (16px - ідеал для iOS) */
-    --fs-label: 15px;          /* Плаваюча підказка (велика) */
+    --fs-status: 11px;         /* Статус під мікрофоном */
+    --fs-input: 18px;          /* Зменшено до 18px, щоб ідеально лізло в рядок на iOS/Android */
+    --fs-label: 14px;          /* Плаваюча підказка (велика) */
     --fs-label-active: 10px;   /* Плаваюча підказка (коли піднялася вгору) */
     --fs-btn: 20px;            /* Текст на головній кнопці збереження */
 
@@ -142,9 +142,13 @@ body {
     width: 100%;
 }
 
-.flex-date { flex: 1.5; }
-.flex-time { flex: 1.1; }
-.flex-dur { flex: 0.8; }
+/* Перерозподіл пропорцій для зручності на мобільних */
+.flex-date { flex: 1.6; min-width: 0; }
+.flex-time { flex: 1.1; min-width: 0; }
+.flex-dur { 
+    flex: 0.8; 
+    min-width: 75px; /* Гарантує, що поле не скукожиться до 1мм */
+}
 
 /* Поля вводу */
 input, select, textarea {
@@ -152,7 +156,7 @@ input, select, textarea {
     background: var(--input-bg);
     border: 1px solid var(--input-border);
     color: var(--text-main);
-    padding: 22px 12px 6px; 
+    padding: 22px 10px 6px; 
     border-radius: var(--radius);
     font-size: var(--fs-input);
     font-weight: 500; 
@@ -163,10 +167,11 @@ input, select, textarea {
 }
 
 .flex-dur input {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     text-align: center;
 }
+
 .flex-dur label {
     left: 0;
     width: 100%;
@@ -193,6 +198,10 @@ label {
     pointer-events: none;
     transition: all 0.2s ease;
     font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 24px);
 }
 
 input:focus ~ label,
