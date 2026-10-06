@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4WGJ817YSY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4WGJ817YSY');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Laser By Nadiia | Quick Links</title>
+    
+    <meta name="robots" content="noindex, follow"> <!-- Страница для сканирования QR, скрыта от лишней индексации поисковиками -->
+
+    <!-- Подключаем те же шрифты и иконки, что и на основном сайте -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <style>
+        /* Дополнительные стили конкретно для QR-страницы, чтобы центрировать контент */
+        .qr-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--background-light);
+            padding: var(--spacing-sm);
+        }
+
+        .qr-card {
+            background-color: var(--background-dark);
+            width: 100%;
+            max-width: 420px;
+            padding: var(--spacing-lg) var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--box-shadow-md);
+            text-align: center;
+        }
+
+        .qr-card__logo {
+            height: 60px;
+            margin-bottom: var(--spacing-sm);
+            object-fit: contain;
+        }
+
+        .qr-card__title {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .qr-card__subtitle {
+            color: var(--text-color-secondary);
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .qr-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        .btn--instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: #fff;
+            box-shadow: var(--box-shadow-sm);
+        }
+
+        .btn--instagram:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .qr-footer {
+            margin-top: var(--spacing-md);
+            font-size: var(--font-size-sm);
+            color: var(--text-color-secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="qr-page">
+        <div class="qr-card">
+            <img src="images/logo.png" alt="Laser By Nadiia Logo" class="qr-card__logo">
+            <h1 class="qr-card__title">Laser By Nadiia</h1>
+            <p class="qr-card__subtitle">Helmond, Stationsplein 21</p>
+
+            <div class="qr-actions">
+                <!-- Ссылка на основной сайт -->
+                <a href="https://laser-by-nadiia.com/" class="btn btn--primary">
+                    <i class="fas fa-globe"></i> <span>Visit Official Website</span>
+                </a>
+
+                <!-- Ссылка на Instagram -->
+                <a href="https://www.instagram.com/laserbynadiia/" target="_blank" class="btn btn--instagram">
+                    <i class="fab fa-instagram"></i> <span>Instagram Profile</span>
+                </a>
+
+                <!-- Кнопка быстрой связи через WhatsApp (опционально, очень удобно для QR) -->
+                <a href="https://wa.me/+31622613808" target="_blank" class="btn btn--whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span>Chat on WhatsApp</span>
+                </a>
+            </div>
+
+            <div class="qr-footer">
+                <p>&copy; 2026 Laser By Nadiia</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
